@@ -94,7 +94,7 @@ function handleSlider(){
         ctx.drawImage(image1, 0, 0, canvas.width, canvas.height);
     } else {
         inputLabel.innerHTML = 'Resolution: ' + inputSlider.value + ' px';
-        ctx.font = parseInt(inputSlider.value) * 1.25 + 'px Verdana';
+        ctx.font = parseInt(inputSlider.value) * 1.75 + 'px Verdana';
         effect.draw(parseInt(inputSlider.value));
     }
 }
