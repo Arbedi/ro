@@ -17,7 +17,7 @@ class Cell {
     }
     draw(ctx){
         ctx.fillStyle = "white";
-		ctx.fillText(this.symbol, this.x + 0.15, this.y + 0.15);
+		ctx.fillText(this.symbol, this.x + 0.25, this.y + 0.25);
         ctx.fillStyle = this.color;
         ctx.fillText(this.symbol, this.x, this.y);
     }
@@ -51,7 +51,7 @@ class AsciiEffect{
         else if (g > 60) return '-';
         else if (g > 40) return 'X';
         else if (g > 20) return 'W';
-        else return '`';
+        else return '';
     }
     #scanImage(cellSize){
         this.#imageCellArray = [];
@@ -94,7 +94,7 @@ function handleSlider(){
         ctx.drawImage(image1, 0, 0, canvas.width, canvas.height);
     } else {
         inputLabel.innerHTML = 'Resolution: ' + inputSlider.value + ' px';
-        ctx.font = parseInt(inputSlider.value) * 1.3 + 'px Verdana';
+        ctx.font = parseInt(inputSlider.value) * 1.25 + 'px Verdana';
         effect.draw(parseInt(inputSlider.value));
     }
 }
