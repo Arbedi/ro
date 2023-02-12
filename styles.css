@@ -5,7 +5,7 @@
 }
 
 :root {
-    --clr-neon: hsl(317 100% 54%);
+    --clr-neon: hsl(345, 70%, 45%);
     --clr-bg: hsl(323 21% 16%);
   }
 
@@ -102,4 +102,11 @@ body{
 .neon-button:hover::after,
 .neon-button:focus::after {
     opacity: 1;
+}
+
+/* button 2 */
+
+#button-two {
+    top: 50px;
+    left: 27.5%;
 }
